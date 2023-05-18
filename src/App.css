@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.top-bar {
+  border-bottom: 1px solid #e0e3e7;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 0 0 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-menu {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  padding: 5px 10px;
+}
+
+
+.create-button {
+  padding: 5px 10px;
+  margin: 2;
+  background: #0052cc;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.sidebar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 240px;
+  background: #fafbfc;
+  border-right: 1px solid #e7e7e7;
+  position: relative;
+}
+
+.sidebar-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #02c7e6;
+  border-radius: 50%;
+  top: 5px;
+  right: -10px;
+  user-select: none;
+}
+.search-bar {
+  position: revert;
+  width: auto;
+  height: 20px;
+  border-radius: 50%;
+  top: 5px;
+  right: 10px;
+  left: 10px;
+  user-select: none;
+  margin: auto;
+}
+.profile-menu {
+  position: relative;
+  margin: auto;
+  width: auto;
+}
+.page-content {
+  padding: 30px;
+}
+
+.sidebar-header {
+  padding: 10px;
+}
+
+.sidebar-section {
+  padding: 10px;
+}
+.sidebar-section-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+.arrow-icon {
+  font-size: 18px;
+  margin-left: 90%;
+}
+
+.board-picker {
+  padding: 10px;
+  margin: 0;
+  background: #f4f5f7;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.section-menu {
+  background: #f4f5f7;
+  padding: 0;
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px 10px;
+}
+
+.search-bar-text-area {
+  background: #02c7e6;
+  padding: 5px;
+  margin-bottom: 2px;
 }
